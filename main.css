@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero section {
+    margin: 0 15px;
+}
+
+header, .headline, #myImage {
+    text-align: center;
+}
+
+header {
+    background-color: lightgray;
+    padding-top: 5px;
+}
+
+.contact {
+    margin-bottom: 2px;
+}
+
+.headline {
+    padding: 0;
+}
+
+h1 {
+    margin: 5px;
+    padding: 0;
+}
+
+.desktop {
+    display:none;
+}
+
+h3, .links, .languages {
+    padding: 2px 15px;
+    margin: 0;
+}
+
+h2 {
+    padding: 15px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+    max-width: 650px;
+    height: auto;
+    text-align: center;
+}
+
+.screenshots div {
+    flex: 1;
+}
+
+.screenshots img {
+    max-width: 100%;
+}
+
+.myImage {
+    height: 115px;
+    width: 115px;
+    background-color: rgb(148, 147, 147);
+    border-radius: 50%;
+    margin: 15px 0 15px 15px;
+    padding: 50px 0;
+}
+
+li {
+    display: inline-block;
+}
+
+p {
+    padding: 2px 15px 5px 15px;
+    margin: 0;
+}
+
+.headline p{
+    padding: 0;
+}
+
+.contact a, .languages li {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(126, 126, 126);
+    padding: 3px 5px;
+    margin: 0;
+}
+
+.scroll a, .links a {
+    color: black;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.projects {
+    background-color: rgb(214, 212, 212);
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 600px) {
+    .hero section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .aboutMe, .aboutProject {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projectDetails, .projectInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+}
