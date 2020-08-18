@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hero section {
@@ -24,7 +25,8 @@ header {
 }
 
 .headline {
-    padding: 0;
+    padding: 0 15px;
+    font-size: 20px;
 }
 
 h1 {
@@ -70,19 +72,21 @@ ul {
 }
 
 .myImage {
-    height: 115px;
-    width: 115px;
     background-color: rgb(148, 147, 147);
     border-radius: 50%;
-    margin: 15px 0 15px 15px;
-    padding: 50px 0;
+    margin: 15px;
+    max-width: 275px;
 }
 
 li {
     display: inline-block;
 }
 
-p {
+.myBio p {
+    margin: 15px;
+}
+
+.description {
     padding: 2px 15px 5px 15px;
     margin: 0;
 }
@@ -127,9 +131,21 @@ p {
         flex-direction: row;
     }
 
+    .headline p{
+        margin-bottom: 0;
+    }
+
     .projectDetails, .projectInfo {
         display: flex;
         flex-direction: column;
+    }
+    
+    .myImage {
+        margin-left: 30px;
+    }
+
+    .aboutMe {
+        align-items: center;
     }
 
     .mobile {
@@ -138,5 +154,9 @@ p {
 
     .desktop {
         display: block;
+    }
+
+    .screenshots {
+        width: 100%;
     }
 }
